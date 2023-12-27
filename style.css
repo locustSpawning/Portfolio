@@ -212,7 +212,7 @@ a:hover {
 }
 
 #mobile-menu-navbar {
-    display: flex;
+    display: none;
     padding: 0.5em 3.5em 3em 0.5em;
     background-image: linear-gradient(
         var(--clr-python),
@@ -228,6 +228,7 @@ a:hover {
     top: 0;
     right: 0;
     max-width: 325px;
+    border-bottom-left-radius: 8px;
 }
 
 #menu-links {
@@ -244,7 +245,7 @@ a:hover {
 }
 
 #mobile-menu-decoration {
-    padding: 0.8em;
+    padding: 4em 0.8em 0.8em 0.8em;
 }
 
 /* --------- MEDIA QUERIES ---------- */
@@ -259,5 +260,10 @@ a:hover {
     }
     .header-mobile {
         display: flex;
+    }
+}
+@media (min-width: 34em) {
+    #mobile-menu-navbar {
+        display: none !important;
     }
 }
