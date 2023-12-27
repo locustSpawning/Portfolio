@@ -1,0 +1,192 @@
+/*https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* -------------------- PERSONAL PORTFOLIO SPECIFICS START HERE --------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+/* ------------- Variables ----------------- */
+
+:root {
+    --clr-background: #191a1b;
+    --clr-python: #252125;
+    --clr-mid-purple: #513a54;
+    --clr-purple-accent: #853785;
+    --clr-light-purple: #c97fc9;
+    --clr-golden: #f2ce8f;
+    --clr-clear-white: #e3e4f1;
+    --clr-blue: #67aef8;
+
+    --ff-lora: 'Lora', serif;
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fs-650: 3rem; /*48px*/
+    --fs-600: 2rem; /*32px*/
+    --fs-500: 1.75rem; /*28px*/
+    --fs-450: 1.5rem; /*24px*/
+    --fs-400: 1.125rem; /*18px*/
+    --fs-300: 1rem; /*16px*/
+    --fs-200: 0.875rem; /*14px*/
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+}
+
+/* ------------- Utility Classes ------------- */
+
+.text-desktop-header-bold {
+    color: var(--clr-clear-white);
+    font-family: var(--ff-lora);
+    font-size: var(--fs-650);
+    font-weight: var(--fw-bold);
+}
+
+.text-desktop-subheading-reg {
+    color: var(--clr-clear-white);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-600);
+    font-weight: var(--fw-regular);
+}
+
+.text-desktop-title-body-quote {
+    color: var(--clr-clear-white);
+    font-family: var(--ff-lora);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-semi-bold);
+}
+
+.text-desktop-large-button {
+    color: var(--clr-clear-white);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-450);
+    font-weight: var(--fw-semi-bold);
+}
+
+.text-desktop-reg-button {
+    color: var(--clr-clear-white);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-semi-bold);
+}
+
+.text-desktop-business-name {
+    color: var(--clr-clear-white);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    font-style: italic;
+}
+
+.text-desktop-skills-list-header-footer-body-reg-text {
+    color: var(--clr-clear-white);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+}
+
+/* -------------------------------------- */
+
+a,
+a:visited {
+    color: var(--clr-text);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--clr-link-hover);
+}
+
+/* ----------- Header ------------- */
+
+.header-desktop-tablet,
+#nav-list {
+    display: flex;
+}
+
+.header-desktop-tablet {
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--clr-background);
+    padding: 0.5em 0 0.5em;
+}
+
+#nav-list {
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+}
