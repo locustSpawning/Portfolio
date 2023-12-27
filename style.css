@@ -37,6 +37,7 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background-color: var(--clr-background);
 }
 
 /* A elements that don't have a class get default styles */
@@ -168,7 +169,7 @@ a:visited {
 }
 
 a:hover {
-    color: var(--clr-link-hover);
+    color: var(--clr-golden);
 }
 
 /* ----------- Header ------------- */
@@ -179,14 +180,19 @@ a:hover {
 }
 
 .header-desktop-tablet {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--clr-background);
-    padding: 0.5em 0 0.5em;
+    padding: 0.5em 10em 0.5em;
 }
 
 #nav-list {
     gap: 2em;
     margin: 0;
     padding: 0;
+}
+
+.current-page {
+    font-weight: var(--fw-bold);
+    color: var(--clr-light-purple);
 }
