@@ -161,6 +161,13 @@ select {
     font-weight: var(--fw-regular);
 }
 
+.text-thankyou {
+    color: var(--clr-light-purple);
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+}
+
 /* -------------------------------------- */
 
 a,
@@ -176,19 +183,25 @@ a:hover {
 /* ----------- Header ------------- */
 
 .header-desktop-tablet,
-#nav-list {
+.nav-list,
+.footer-desktop {
     display: flex;
 }
 
 .header-desktop-tablet,
-.header-mobile {
+.header-mobile,
+.footer-desktop {
     justify-content: space-between;
-    align-items: center;
-    background-color: var(--clr-background);
-    padding: 0.5em 10em 0.5em;
 }
 
-#nav-list {
+.header-desktop-tablet,
+.header-mobile {
+    background-color: var(--clr-background);
+    padding: 0.5em 10em 0.5em;
+    align-items: center;
+}
+
+.nav-list {
     gap: 2em;
     margin: 0;
     padding: 0;
@@ -246,6 +259,13 @@ a:hover {
 
 #mobile-menu-decoration {
     padding: 4em 0.8em 0.8em 0.8em;
+}
+
+/* ----------- FOOTER ------------- */
+
+.footer-desktop {
+    background-color: var(--clr-python);
+    padding: 3em 10em 3em;
 }
 
 /* --------- MEDIA QUERIES ---------- */
