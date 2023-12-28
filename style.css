@@ -261,7 +261,7 @@ a:hover {
     padding: 4em 0.8em 0.8em 0.8em;
 }
 
-/* ----------- FOOTER - DESKTOP - TABLET ------------- */
+/* ----------- FOOTER - DESKTOP - TABLET - MOBILE ------------- */
 
 .footer-desktop,
 .footer-tablet {
@@ -300,13 +300,30 @@ a:hover {
     align-items: flex-end;
 }
 
-#footer-tablet-bottom-column {
+.footer-tablet-mobile-bottom-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.2em;
     padding-top: 1em;
+}
+
+#return-to-top {
+    padding-bottom: 2em;
+}
+
+#return-to-top:active {
+    min-height: 140px;
+    min-width: 158px;
+    margin: -9px;
+}
+
+.footer-mobile {
+    display: none;
+    background-color: var(--clr-python);
+    flex-direction: column;
+    padding: 3em 3em 3em;
 }
 
 /* --------- MEDIA QUERIES ---------- */
@@ -326,6 +343,12 @@ a:hover {
         display: none;
     }
     .header-mobile {
+        display: flex;
+    }
+    .footer-tablet {
+        display: none;
+    }
+    .footer-mobile {
         display: flex;
     }
 }
