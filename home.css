@@ -1,0 +1,36 @@
+/* ----------- HOME PAGE  ------------- */
+
+#recent-work-homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3em 10em 3em;
+    gap: 4em;
+}
+
+.homepage-recent-work-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 0.5em 2em 0.5em;
+}
+
+.homepage-recent-work-button:hover {
+    background-color: var(--clr-button-hover);
+    border-radius: 8px;
+}
+
+.homepage-button-image {
+    max-width: 378px;
+    max-height: 240px;
+    min-width: 378px;
+    min-height: 240px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.button-text-alignment {
+    text-align: right;
+}
