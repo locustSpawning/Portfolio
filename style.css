@@ -266,6 +266,29 @@ a:hover {
 .footer-desktop {
     background-color: var(--clr-python);
     padding: 3em 10em 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-desktop-top-row,
+#footer-desktop-bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-desktop-top-row {
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+#footer-desktop-bottom-row {
+    align-items: flex-end;
+}
+
+#footer-credits-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 /* --------- MEDIA QUERIES ---------- */
