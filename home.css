@@ -76,6 +76,15 @@
     align-self: flex-end;
 }
 
+/* ----------- SKILLS GRID  ------------- */
+
+#skills-list-section {
+    background: linear-gradient(
+        var(--clr-skills-bottom),
+        var(--clr-skills-top)
+    );
+}
+
 /* --------- MEDIA QUERIES ---------- */
 @media (min-width: 102em) {
     .homepage-button-image {
