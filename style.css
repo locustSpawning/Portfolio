@@ -138,6 +138,13 @@ button {
     font-weight: var(--fw-semi-bold);
 }
 
+.text-highlight {
+    color: var(--clr-golden);
+    font-family: var(--ff-lora);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-semi-bold);
+}
+
 .text-desktop-large-button {
     color: var(--clr-clear-white);
     font-family: var(--ff-poppins);
@@ -153,7 +160,7 @@ button {
 }
 
 .text-desktop-business-name {
-    color: var(--clr-clear-white);
+    color: var(--clr-golden);
     font-family: var(--ff-poppins);
     font-size: var(--fs-400);
     font-weight: var(--fw-regular);

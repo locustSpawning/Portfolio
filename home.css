@@ -1,5 +1,9 @@
 /* ----------- HOME PAGE  ------------- */
-#center-recent-work {
+
+/* ----------- RECENT WORK  ------------- */
+
+#center-recent-work,
+#center-quote-section {
     display: flex;
     justify-content: center;
 }
@@ -42,6 +46,36 @@
     min-width: 250px;
 }
 
+/* ----------- QUOTE  ------------- */
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em 0em 3em;
+}
+
+#large-gold-star,
+#small-gold-star {
+    align-self: flex-start;
+}
+
+#testimonial {
+    padding-bottom: 1em;
+}
+
+#large-gold-star,
+#medium-gold-star,
+#business-name,
+#small-gold-star {
+    padding-bottom: 3em;
+}
+
+#medium-gold-star,
+#business-name {
+    align-self: flex-end;
+}
+
 /* --------- MEDIA QUERIES ---------- */
 @media (min-width: 102em) {
     .homepage-button-image {
@@ -53,9 +87,6 @@
     .homepage-recent-work-button {
         gap: 15em;
         padding-right: 8em;
-    }
-    #recent-work-homepage {
-        /* padding: 3em 20em 3em; */
     }
 }
 @media (max-width: 65.75em) {
@@ -70,6 +101,17 @@
     }
 }
 
+@media (max-width: 60em) {
+    #quote {
+        padding: 0 10em 0;
+    }
+}
+@media (max-width: 46em) {
+    #quote {
+        padding: 0 3em 0;
+    }
+}
+
 @media (max-width: 33em) {
     .homepage-recent-work-button {
         flex-direction: column;
@@ -81,5 +123,8 @@
     }
     .button-text-alignment {
         text-align: center;
+    }
+    #quote {
+        padding: 0 3em 0;
     }
 }
