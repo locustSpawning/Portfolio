@@ -3,7 +3,8 @@
 /* ----------- RECENT WORK  ------------- */
 
 #center-recent-work,
-#center-quote-section {
+#center-quote-section,
+#center-lets-connect-section {
     display: flex;
     justify-content: center;
 }
@@ -49,7 +50,7 @@
 /* ----------- QUOTE & LETS CONNECT ------------- */
 
 #quote,
-#lets-connect-section {
+#call-to-action {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +63,8 @@
     align-self: flex-start;
 }
 
-#testimonial {
+#testimonial,
+#lets-connect-text {
     padding-bottom: 1em;
 }
 
@@ -70,6 +72,7 @@
 #medium-gold-star,
 #business-name,
 #small-gold-star,
+#medium-black-star,
 #large-black-star {
     padding-bottom: 3em;
 }
@@ -78,6 +81,14 @@
 #business-name,
 #large-black-star {
     align-self: flex-end;
+}
+
+.center-item {
+    align-self: center;
+}
+
+#connect-button {
+    margin-bottom: 3em;
 }
 
 /* ----------- SKILLS GRID  ------------- */
@@ -149,6 +160,10 @@ ul {
 
 /* --------- Lets Connect ---------- */
 
+#call-to-action {
+    width: 49em;
+}
+
 /* --------- MEDIA QUERIES ---------- */
 @media (min-width: 102em) {
     .homepage-button-image {
@@ -175,12 +190,14 @@ ul {
 }
 
 @media (max-width: 60em) {
-    #quote {
+    #quote,
+    #call-to-action {
         padding: 0 10em 0;
     }
 }
 @media (max-width: 46em) {
-    #quote {
+    #quote,
+    #call-to-action {
         padding: 0 3em 0;
     }
 }
@@ -197,7 +214,8 @@ ul {
     .button-text-alignment {
         text-align: center;
     }
-    #quote {
+    #quote,
+    #call-to-action {
         padding: 0 3em 0;
     }
 }
