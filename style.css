@@ -155,12 +155,12 @@ button {
     font-weight: var(--fw-semi-bold);
 }
 
-.text-desktop-reg-button {
+/* .text-desktop-reg-button {
     color: var(--clr-clear-white);
     font-family: var(--ff-poppins);
-    font-size: var(--fs-400);
+    font-size: var(--fs-450);
     font-weight: var(--fw-semi-bold);
-}
+} */
 
 .text-desktop-business-name {
     color: var(--clr-golden);
@@ -281,6 +281,22 @@ a:hover {
 
 .title-align {
     padding-left: 1em;
+}
+
+.call-to-action-button-purple {
+    padding: 0.6em 2.7em;
+    border: 2px solid var(--clr-purple-accent);
+    background-color: var(--clr-python);
+    border-radius: 4px;
+}
+
+.call-to-action-button-purple:hover {
+    background-color: var(--clr-purple-accent);
+}
+
+.call-to-action-button-purple:active {
+    background-color: var(--clr-clear-white);
+    color: var(--clr-background);
 }
 
 /* ----------- FOOTER - DESKTOP - TABLET - MOBILE ------------- */

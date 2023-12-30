@@ -46,9 +46,10 @@
     min-width: 250px;
 }
 
-/* ----------- QUOTE  ------------- */
+/* ----------- QUOTE & LETS CONNECT ------------- */
 
-#quote {
+#quote,
+#lets-connect-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +57,8 @@
 }
 
 #large-gold-star,
-#small-gold-star {
+#small-gold-star,
+#medium-black-star {
     align-self: flex-start;
 }
 
@@ -67,12 +69,14 @@
 #large-gold-star,
 #medium-gold-star,
 #business-name,
-#small-gold-star {
+#small-gold-star,
+#large-black-star {
     padding-bottom: 3em;
 }
 
 #medium-gold-star,
-#business-name {
+#business-name,
+#large-black-star {
     align-self: flex-end;
 }
 
@@ -142,6 +146,9 @@ ul {
         align-self: center;
     }
 }
+
+/* --------- Lets Connect ---------- */
+
 /* --------- MEDIA QUERIES ---------- */
 @media (min-width: 102em) {
     .homepage-button-image {
