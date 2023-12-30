@@ -98,6 +98,8 @@ button {
     --clr-blue: #67aef8;
     --clr-menu-gradient: #252125;
     --clr-button-hover: rgba(81, 58, 84, 0.72);
+    --clr-skills-top: rgba(46, 18, 46, 0.2);
+    --clr-skills-bottom: rgba(101, 50, 101, 0.2);
 
     --ff-lora: 'Lora', serif;
     --ff-poppins: 'Poppins', sans-serif;
