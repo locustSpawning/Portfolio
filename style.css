@@ -100,6 +100,7 @@ button {
     --clr-button-hover: rgba(81, 58, 84, 0.72);
     --clr-skills-top: rgba(46, 18, 46, 0.2);
     --clr-skills-bottom: rgba(101, 50, 101, 0.2);
+    --clr-skills-highlight: rgba(41, 91, 222, 0.5);
 
     --ff-lora: 'Lora', serif;
     --ff-poppins: 'Poppins', sans-serif;
