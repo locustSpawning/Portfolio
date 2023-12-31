@@ -175,6 +175,7 @@ button {
     font-family: var(--ff-poppins);
     font-size: var(--fs-400);
     font-weight: var(--fw-regular);
+    line-height: 2em;
 }
 
 .text-thankyou {

@@ -1,13 +1,132 @@
-/* ----------- HOME PAGE  ------------- */
+/* ----------- WORK PAGE  ------------- */
+
+/* ----------- Layout  ------------- */
+
+#two-column-layout-work {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5em 10em 10em;
+    gap: 4em;
+}
+
+#right-column,
+#left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+#left-column {
+    width: 520px;
+}
+
+@media (min-width: 102em) {
+    #two-column-layout-work {
+        gap: 20em;
+    }
+    #left-column {
+        width: 600px;
+    }
+}
+@media (max-width: 66em) {
+    #two-column-layout-work {
+        padding: 5em 3em 10em;
+    }
+}
+@media (max-width: 57em) {
+    #two-column-layout-work {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #view-more-behance-button-arrow-div {
+        justify-content: center;
+    }
+}
 
 /* ----------- Behance Button ------------- */
 #view-more-behance-button-arrow-div {
     display: flex;
     align-items: center;
-    align-content: center;
     gap: 1em;
+    padding: 5em 10em 10em;
 }
 
 #view-more-behance-button1:hover {
     color: var(--clr-light-purple) !important;
+}
+
+@media (min-width: 131em) {
+    #view-more-behance-button-arrow-div {
+        padding-left: 28.5em;
+    }
+}
+@media (max-width: 66em) {
+    #view-more-behance-button-arrow-div {
+        padding: 5em 3em 10em;
+    }
+}
+@media (max-width: 57em) {
+    #view-more-behance-button-arrow-div {
+        padding-top: 0em;
+    }
+}
+
+/* ----------- Work Buttons ------------- */
+
+.workpage-recent-work-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 0.5em 2em 0.5em;
+    transition: 0.3s;
+}
+
+.workpage-recent-work-button:hover {
+    background-color: var(--clr-button-hover);
+    border-radius: 8px;
+}
+
+.workpage-button-image {
+    max-width: 220px;
+    max-height: 150px;
+    min-width: 220px;
+    min-height: 150px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.button-text-alignment-workpage {
+    text-align: right;
+    min-width: 50px;
+}
+
+@media (max-width: 83em) {
+    .workpage-button-image {
+        max-width: 200px;
+        max-height: 150px;
+        min-width: 200px;
+        min-height: 150px;
+    }
+    .workpage-recent-work-button {
+        gap: 1em;
+    }
+}
+@media (max-width: 68em) {
+    .workpage-recent-work-button {
+        flex-direction: column;
+    }
+    .button-text-alignment-workpage {
+        text-align: center;
+    }
+}
+@media (max-width: 57em) {
+    .workpage-recent-work-button {
+        flex-direction: row;
+    }
+    .button-text-alignment-workpage {
+        text-align: flex-end;
+    }
 }
