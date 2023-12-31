@@ -299,6 +299,19 @@ a:hover {
     color: var(--clr-background);
 }
 
+.arrow {
+    display: inline;
+    padding: 0.2em 0 0;
+}
+
+.arrow:hover {
+    display: none;
+}
+
+.arrow-hover-state {
+    display: none;
+}
+
 /* ----------- FOOTER - DESKTOP - TABLET - MOBILE ------------- */
 
 .footer-desktop,

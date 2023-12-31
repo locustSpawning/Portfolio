@@ -1,0 +1,13 @@
+/* ----------- HOME PAGE  ------------- */
+
+/* ----------- Behance Button ------------- */
+#view-more-behance-button-arrow-div {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+}
+
+#view-more-behance-button1:hover {
+    color: var(--clr-light-purple) !important;
+}
