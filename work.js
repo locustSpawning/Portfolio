@@ -6,8 +6,6 @@ const viewMoreBehance1 = document.getElementById('view-more-behance-button1');
 const arrowBehance1 = document.getElementById('arrow-behance-1');
 const arrowBehance2 = document.getElementById('arrow-behance-2');
 
-console.log(arrowBehance1);
-
 viewMoreBehance1.addEventListener('mouseover', () => {
     arrowBehance1.style.display = 'none';
     arrowBehance2.style.display = 'inline';

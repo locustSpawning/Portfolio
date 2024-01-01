@@ -44,6 +44,12 @@
         justify-content: center;
     }
 }
+@media (max-width: 33em) {
+    #work-description {
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+}
 
 /* ----------- Behance Button ------------- */
 #view-more-behance-button-arrow-div {
