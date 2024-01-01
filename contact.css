@@ -1,0 +1,12 @@
+/* ----------- CONTACT PAGE  ------------- */
+
+.contact-page-link {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.contact-link-image:hover {
+    filter: invert(40%) sepia(20%) saturate(1220%) hue-rotate(359deg)
+        brightness(141%) contrast(90%);
+}
