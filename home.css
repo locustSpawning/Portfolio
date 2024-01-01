@@ -83,10 +83,6 @@
     align-self: flex-end;
 }
 
-.center-item {
-    align-self: center;
-}
-
 #connect-button {
     margin-bottom: 3em;
 }

@@ -284,18 +284,32 @@ a:hover {
     padding-left: 1em;
 }
 
-.call-to-action-button-purple {
-    padding: 0.6em 2.7em;
-    border: 2px solid var(--clr-purple-accent);
-    background-color: var(--clr-python);
+.call-to-action-button-purple,
+.call-to-action-button-blue {
     border-radius: 4px;
+    min-width: 222px;
+    padding: 0.6em 2.7em;
+    background-color: var(--clr-python);
+}
+
+.call-to-action-button-purple {
+    border: 2px solid var(--clr-purple-accent);
 }
 
 .call-to-action-button-purple:hover {
     background-color: var(--clr-purple-accent);
 }
 
-.call-to-action-button-purple:active {
+.call-to-action-button-blue {
+    border: 2px solid var(--clr-blue);
+}
+
+.call-to-action-button-blue:hover {
+    background-color: var(--clr-blue);
+}
+
+.call-to-action-button-purple:active,
+.call-to-action-button-blue:active {
     background-color: var(--clr-clear-white);
     color: var(--clr-background);
 }
@@ -311,6 +325,10 @@ a:hover {
 
 .arrow-hover-state {
     display: none;
+}
+
+.center-item {
+    align-self: center;
 }
 
 /* ----------- FOOTER - DESKTOP - TABLET - MOBILE ------------- */

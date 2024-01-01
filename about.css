@@ -2,11 +2,18 @@
 
 /* ----------- ABOUT & VALUES ------------- */
 
+#about-section {
+    padding: 8em 10em 0em;
+}
+
+#values-section {
+    padding: 0em 10em 0em;
+}
+
 #about-section,
 #values-section {
     display: flex;
     justify-content: center;
-    padding: 5em 10em 5em;
     gap: 4em;
 }
 
@@ -34,8 +41,16 @@
 }
 
 #me-and-the-chickies {
-    transform: translateX(-30%);
+    transform: translateX(-40%);
     border-radius: 0 4px 4px 0;
+}
+
+#values-section-mobile {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 3em;
 }
 
 @media (min-width: 131em) {
@@ -62,13 +77,19 @@
         border-radius: 4px;
     }
     #about-section {
+        padding: 8em 20em 0em;
+    }
+    #values-section {
         gap: 8em;
-        padding: 5em 20em 10em;
+        padding: 0em 20em 0em;
     }
 }
 @media (max-width: 78em) {
     #about-section {
-        padding: 5em 3em 10em;
+        padding: 8em 3em 0em;
+    }
+    #values-section {
+        padding: 0em 3em 0em;
         gap: 1em;
     }
     #me-at-craft-fair,
@@ -82,7 +103,7 @@
         transform: translateX(10%);
     }
     #me-and-the-chickies {
-        transform: translateX(-10%);
+        transform: translateX(-20%);
     }
 }
 @media (max-width: 57em) {
@@ -101,6 +122,12 @@
         flex-direction: column;
         text-align: center;
     }
+    #values-section {
+        display: none;
+    }
+    #values-section-mobile {
+        display: flex;
+    }
 }
 
 /* ----------- STARS ------------- */
@@ -109,5 +136,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5em;
+    padding: 8em 0 8em;
+}
+
+/* ----------- LETS CONNECT SECTION ------------- */
+
+#lets-connect-about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-bottom: 10em;
+}
+
+#button-container {
+    display: flex;
+    gap: 5em;
+}
+
+@media (max-width: 57em) {
+    #button-container {
+        flex-direction: column;
+        gap: 2em;
+    }
+    #contact-button-about-page,
+    #cv-button-about-page {
+        min-width: 450px;
+    }
+}
+@media (max-width: 29em) {
+    #button-container {
+        flex-direction: column;
+        gap: 2em;
+    }
+    #contact-button-about-page,
+    #cv-button-about-page {
+        min-width: 400px;
+    }
 }
