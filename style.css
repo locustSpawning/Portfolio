@@ -141,6 +141,13 @@ button {
     font-weight: var(--fw-semi-bold);
 }
 
+.text-desktop-title-cv-small {
+    color: var(--clr-clear-white);
+    font-family: var(--ff-lora);
+    font-size: var(--fs-450);
+    font-weight: var(--fw-semi-bold);
+}
+
 .text-highlight {
     color: var(--clr-golden);
     font-family: var(--ff-lora);
