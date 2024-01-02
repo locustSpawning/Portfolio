@@ -1,0 +1,29 @@
+/* ----------- CONTACT PAGE  ------------- */
+
+#name {
+    margin: 8em 0 10em;
+    padding: 2em 10em 2em;
+    background-color: var(--clr-mid-purple);
+}
+
+#cv-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    padding: 0 10em 10em;
+    max-width: 1868px;
+}
+
+#about-block-size {
+    max-width: 571px;
+}
+
+#skills-organize-lists {
+    display: flex;
+    gap: 3em;
+}
+
+#list-1,
+#list-2 {
+    padding: 0;
+}

@@ -146,6 +146,7 @@ button {
     font-family: var(--ff-lora);
     font-size: var(--fs-450);
     font-weight: var(--fw-semi-bold);
+    padding: 1em 0 0.2em;
 }
 
 .text-highlight {
