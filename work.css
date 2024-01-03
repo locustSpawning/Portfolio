@@ -4,8 +4,8 @@
 
 #two-column-layout-work {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
+    align-content: flex-start;
     padding: 5em 10em 10em;
     gap: 4em;
 }
@@ -21,8 +21,10 @@
     width: 520px;
 }
 
-@media (min-width: 102em) {
+@media (min-width: 130em) {
     #two-column-layout-work {
+        padding-left: 35em;
+
         gap: 20em;
     }
     #left-column {
@@ -40,9 +42,6 @@
         align-items: center;
         text-align: center;
     }
-    #view-more-behance-button-arrow-div {
-        justify-content: center;
-    }
 }
 @media (max-width: 33em) {
     #work-description {
@@ -56,26 +55,30 @@
     display: flex;
     align-items: center;
     gap: 1em;
-    padding: 5em 10em 10em;
+    padding: 0em 10em 10em;
 }
 
 #view-more-behance-button1:hover {
     color: var(--clr-light-purple) !important;
 }
 
-@media (min-width: 131em) {
+@media (min-width: 130em) {
     #view-more-behance-button-arrow-div {
-        padding-left: 28.5em;
-    }
-}
-@media (max-width: 66em) {
-    #view-more-behance-button-arrow-div {
-        padding: 5em 3em 10em;
+        padding-left: 35em;
     }
 }
 @media (max-width: 57em) {
     #view-more-behance-button-arrow-div {
-        padding-top: 0em;
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+}
+
+@media (max-width: 60em) {
+    #view-more-behance-button-arrow-div {
+        justify-content: center;
+        padding-right: 3em;
+        padding-left: 3em;
     }
 }
 

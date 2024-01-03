@@ -41,10 +41,6 @@
     color: var(--clr-light-purple) !important;
 }
 
-/* #cv-contact {
-    margin: 0em 7em 5em;
-} */
-
 #cv-contact-button-div {
     display: flex;
     justify-content: flex-start;
