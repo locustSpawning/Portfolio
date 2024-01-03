@@ -4,18 +4,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 8em 10em 10em;
     gap: 5em;
+}
+
+#cv-button-contact-page-div,
+#contact-page-section {
+    padding: 8em 10em 10em;
+}
+
+#cv-button-contact-page-div {
+    display: flex;
+    justify-content: flex-start;
 }
 
 #contact-title-star-div {
     display: flex;
     justify-content: space-between;
     /* max-width: 1100px; */
-}
-
-#cv-button-contact-page {
-    margin: 1em 7em 9em;
 }
 
 .contact-page-link {
@@ -37,11 +42,9 @@
 }
 
 @media (min-width: 120em) {
-    #contact-page-section {
+    #contact-page-section,
+    #cv-button-contact-page-div {
         padding-left: 35em;
-    }
-    #cv-button-contact-page {
-        margin-left: 23.5em;
     }
 }
 
@@ -57,23 +60,20 @@
         min-width: 27px;
         min-height: 27px;
     }
-    #contact-page-section {
+    #contact-page-section,
+    #cv-button-contact-page-div {
         padding: 8em 5em 10em;
         align-items: center;
     }
-    #cv-button-contact-page {
-        margin: 0em 8em 5em;
+    #cv-button-contact-page-div {
+        justify-content: center;
     }
-}
-
-@media (max-width: 37em) {
     #cv-button-contact-page {
-        margin: 0em 1em 5em;
         min-width: 450px;
     }
 }
 
-@media (max-width: 29em) {
+@media (max-width: 33em) {
     #cv-button-contact-page {
         min-width: 400px;
     }

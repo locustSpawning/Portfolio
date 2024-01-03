@@ -14,10 +14,6 @@
     max-width: 1868px;
 }
 
-/* .about-block-size {
-    max-width: 571px;
-} */
-
 #skills-organize-lists {
     display: flex;
     gap: 3em;
@@ -28,15 +24,48 @@
     padding: 0;
 }
 
+/* ----------- PDF Button & Contact Button ------------- */
+
+#open-as-pdf-button1 {
+    padding: 0;
+}
+
+#open-as-pdf-div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0em 10em 5em;
+}
+
+#open-as-pdf-button1:hover {
+    color: var(--clr-light-purple) !important;
+}
+
+/* #cv-contact {
+    margin: 0em 7em 5em;
+} */
+
+#cv-contact-button-div {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0em 10em 5em;
+}
+
+/* ----------- MEDIA QUERIES ------------- */
+
 @media (min-width: 102em) {
     #cv-grid,
-    #name {
+    #name,
+    #open-as-pdf-div,
+    #cv-contact-button-div {
         padding-left: 35em;
     }
 }
 @media (max-width: 65em) {
     #cv-grid,
-    #name {
+    #name,
+    #open-as-pdf-div,
+    #cv-contact-button-div {
         padding-right: 3em;
         padding-left: 3em;
     }
@@ -53,31 +82,29 @@
         flex-direction: column;
     }
 }
-
-/* ----------- PDF Button ------------- */
-#open-as-pdf-div {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    padding: 0em 10em 5em;
-}
-
-#open-as-pdf-button1:hover {
-    color: var(--clr-light-purple) !important;
-}
-
-@media (min-width: 131em) {
-    #open-as-pdf-div {
-        padding-left: 28.5em;
-    }
-}
-@media (max-width: 66em) {
-    #open-as-pdf-div {
-        padding: 0 3em 10em;
-    }
-}
 @media (max-width: 50em) {
     #open-as-pdf-div {
         justify-content: center;
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+}
+
+/* ----------- MEDIA QUERIES -- CV Button------------- */
+
+@media (max-width: 50em) {
+    #cv-contact-button-div {
+        display: flex;
+        justify-content: center;
+    }
+    #cv-contact {
+        margin: 0em 1em 5em;
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 29em) {
+    #cv-contact {
+        min-width: 400px;
     }
 }

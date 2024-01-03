@@ -339,6 +339,10 @@ a:hover {
     align-self: center;
 }
 
+.connect-button {
+    margin-bottom: 3em;
+}
+
 /* ----------- FOOTER - DESKTOP - TABLET - MOBILE ------------- */
 
 .footer-desktop,
