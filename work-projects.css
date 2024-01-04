@@ -1,0 +1,26 @@
+/* ----------- WORK PROJECTS STYLE PAGE  ------------- */
+
+.work-title-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--clr-mid-purple);
+    padding: 3em 0 3em;
+    margin: 5em 0 5em;
+}
+
+@media (max-width: 55em) {
+    .work-title-div {
+        padding: 3em 3em 3em;
+    }
+}
+
+.max-width-text {
+    max-width: 876px;
+}
+
+.bottom-padding {
+    padding-bottom: 1em;
+}
