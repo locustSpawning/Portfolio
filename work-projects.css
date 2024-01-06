@@ -24,3 +24,20 @@
 .bottom-padding {
     padding-bottom: 1em;
 }
+
+.work-break-down {
+    display: flex;
+    justify-content: center;
+}
+
+.center-work-break-down-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 0 3em 0;
+    gap: 3em;
+    max-width: 916px;
+}

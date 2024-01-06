@@ -343,6 +343,10 @@ a:hover {
     margin-bottom: 3em;
 }
 
+.bottom-spacing {
+    padding-bottom: 8em;
+}
+
 /* ----------- FOOTER - DESKTOP - TABLET - MOBILE ------------- */
 
 .footer-desktop,
