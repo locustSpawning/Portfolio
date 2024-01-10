@@ -75,9 +75,9 @@ function copyGmail(htmlElement) {
 
     inputElement.select();
     // console.log(inputElement.value);
-    // inputElement.parentNode.removeChild(inputElement);
 
     document.execCommand('copy');
+    inputElement.parentNode.removeChild(inputElement);
 }
 
 document.querySelector('#copy-gmail-btn').onclick = function () {
