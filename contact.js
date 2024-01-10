@@ -12,7 +12,7 @@ const behanceImage = document.getElementById('behance-image');
 const behanceLink = document.getElementById('behance-link');
 
 const gmailImage = document.getElementById('gmail-image');
-const gmailLink = document.getElementById('gmail-link');
+const gmailLink = document.getElementById('copy-gmail-btn');
 
 linkedInLink.addEventListener('mouseover', () => {
     linkedInImage.style.filter =
@@ -49,3 +49,37 @@ gmailLink.addEventListener('mouseover', () => {
 gmailLink.addEventListener('mouseout', () => {
     gmailImage.style.filter = 'none';
 });
+
+gmailLink.addEventListener('mousedown', () => {
+    gmailImage.style.filter =
+        'invert(60%) sepia(23%) saturate(940%) hue-rotate(251deg) brightness(102%) contrast(74%)';
+});
+
+gmailLink.addEventListener('mouseup', () => {
+    gmailImage.style.filter =
+        'invert(40%) sepia(20%) saturate(1220%) hue-rotate(359deg) brightness(141%) contrast(90%)';
+});
+
+// Copy gmail to clipboard
+
+function copyGmail(htmlElement) {
+    if (!htmlElement) {
+        return;
+    }
+
+    let elementText = 'chelsleonhardt@gmail.com';
+
+    let inputElement = document.createElement('input');
+    inputElement.setAttribute('value', elementText);
+    document.body.appendChild(inputElement);
+
+    inputElement.select();
+    // console.log(inputElement.value);
+    // inputElement.parentNode.removeChild(inputElement);
+
+    document.execCommand('copy');
+}
+
+document.querySelector('#copy-gmail-btn').onclick = function () {
+    copyGmail(document.querySelector('#gmail-text'));
+};

@@ -41,6 +41,14 @@
     max-width: 989px;
 }
 
+#copy-gmail-btn:hover {
+    color: var(--clr-golden);
+}
+
+#copy-gmail-btn:active {
+    color: var(--clr-light-purple);
+}
+
 @media (min-width: 120em) {
     #contact-page-section,
     #cv-button-contact-page-div {
