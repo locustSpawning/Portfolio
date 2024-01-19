@@ -62,23 +62,31 @@ gmailLink.addEventListener('mouseup', () => {
 
 // Copy gmail to clipboard
 
-function copyGmail(htmlElement) {
-    if (!htmlElement) {
-        return;
-    }
+let successDiv = document.getElementById('success-div');
+let failDiv = document.getElementById('failed-div');
 
-    let elementText = 'chelsleonhardt@gmail.com';
+let currentDiv;
 
-    let inputElement = document.createElement('input');
-    inputElement.setAttribute('value', elementText);
-    document.body.appendChild(inputElement);
+var delayInMilliseconds = 1000; //1 second
 
-    inputElement.select();
-
-    document.execCommand('copy');
-    inputElement.parentNode.removeChild(inputElement);
+function fadeOut(currentDiv) {
+    currentDiv.style.opacity = '0';
+    currentDiv.style.transition = 'opacity 500ms';
 }
 
-document.querySelector('#copy-gmail-btn').onclick = function () {
-    copyGmail(document.querySelector('#gmail-text'));
-};
+let copyEmailButton = document.getElementById('copy-gmail-btn');
+copyEmailButton.addEventListener('click', () => {
+    navigator.clipboard.writeText('chelsleonhardt@gmail.com').then(
+        () => {
+            currentDiv = successDiv;
+            successDiv.style.opacity = '1';
+            successDiv.style.transition = 'opacity 300ms';
+            setTimeout(fadeOut, delayInMilliseconds, currentDiv);
+        },
+        () => {
+            currentDiv = failDiv;
+            failDiv.style.opacity = '1';
+            failDiv.style.transition = 'opacity 300ms';
+        }
+    );
+});
