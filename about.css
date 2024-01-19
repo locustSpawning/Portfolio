@@ -53,6 +53,7 @@
     text-align: center;
     justify-content: center;
     gap: 3em;
+    padding: 0em 3em 0em;
 }
 
 @media (min-width: 131em) {
@@ -119,6 +120,7 @@
         align-self: center;
         object-fit: contain;
         border-radius: 4px;
+        overflow: hidden;
     }
     #about-section {
         flex-direction: column;
