@@ -45,6 +45,9 @@
     align-items: start;
 }
 
+#gmail-text {
+    text-align: left;
+}
 /* ----------- Copy Gmail  ------------- */
 
 #copy-gmail-btn:hover {
