@@ -120,7 +120,6 @@
         align-self: center;
         object-fit: contain;
         border-radius: 4px;
-        overflow: hidden;
     }
     #about-section {
         flex-direction: column;
@@ -131,6 +130,15 @@
     }
     #values-section-mobile {
         display: flex;
+    }
+}
+@media (max-width: 36em) {
+    #me-at-craft-fair,
+    #me-and-the-chickies {
+        max-width: 450px;
+        max-height: 600px;
+        min-width: 450px;
+        min-height: 600px;
     }
 }
 
@@ -167,6 +175,12 @@
     #contact-button-about-page,
     #cv-button-about-page {
         min-width: 450px;
+    }
+}
+
+@media (max-width: 36em) {
+    .star-center-div {
+        padding: 2em 0 4em;
     }
 }
 @media (max-width: 29em) {
