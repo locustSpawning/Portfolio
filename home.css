@@ -1,5 +1,9 @@
 /* ----------- HOME PAGE  ------------- */
 
+#mobile-hero-image {
+    display: none;
+}
+
 /* ----------- RECENT WORK  ------------- */
 
 #center-recent-work,
@@ -242,5 +246,11 @@ ul {
     #quote,
     #call-to-action {
         padding: 2em 3em 0;
+    }
+    #mobile-hero-image {
+        display: block;
+    }
+    #hero-image {
+        display: none;
     }
 }

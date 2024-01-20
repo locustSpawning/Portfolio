@@ -7,7 +7,7 @@
 }
 
 #values-section {
-    padding: 0em 10em 0em;
+    padding: 0em 10em 8em;
 }
 
 #about-section,
@@ -47,15 +47,6 @@
     border-radius: 0 4px 4px 0;
 }
 
-#values-section-mobile {
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    gap: 3em;
-    padding: 0em 3em 0em;
-}
-
 @media (min-width: 131em) {
     #align-text-about-section,
     #align-text-values-section {
@@ -84,7 +75,7 @@
     }
     #values-section {
         gap: 8em;
-        padding: 0em 20em 0em;
+        padding: 0em 20em 8em;
     }
 }
 @media (max-width: 78em) {
@@ -92,7 +83,7 @@
         padding: 8em 3em 0em;
     }
     #values-section {
-        padding: 0em 3em 0em;
+        padding: 0em 3em 8em;
         gap: 1em;
     }
     #me-at-craft-fair,
@@ -126,10 +117,11 @@
         text-align: center;
     }
     #values-section {
-        display: none;
+        flex-direction: column-reverse;
+        gap: 3em;
     }
-    #values-section-mobile {
-        display: flex;
+    #align-text-values-section {
+        text-align: center;
     }
 }
 @media (max-width: 36em) {
@@ -181,6 +173,10 @@
 @media (max-width: 36em) {
     .star-center-div {
         padding: 2em 0 4em;
+    }
+    #lets-connect-about-page {
+        padding-left: 3em;
+        padding-right: 3em;
     }
 }
 @media (max-width: 29em) {
