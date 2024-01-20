@@ -193,15 +193,23 @@ button {
     font-weight: var(--fw-regular);
 }
 
-/* -------------------------------------- */
+/* ---------------- LINKS ---------------------- */
 
-a,
-a:visited {
+header a,
+footer a,
+#recent-work-homepage a,
+#right-column a,
+#view-more-behance-workpage-div a,
+#contact-links-grid a,
+#open-as-pdf-div1 a,
+header a:visited,
+footer a:visited {
     color: var(--clr-text);
     text-decoration: none;
 }
-
-a:hover {
+header a:hover,
+footer a:hover,
+#contact-links-grid a:hover {
     color: var(--clr-golden);
 }
 
