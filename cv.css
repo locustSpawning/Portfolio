@@ -66,9 +66,14 @@
 
 /* ----------- MEDIA QUERIES ------------- */
 
-@media (min-width: 130em) {
+@media (min-width: 155em) {
     #actual-picture {
-        padding-right: 35em;
+        padding-right: 65em !important;
+    }
+}
+@media (min-width: 127em) {
+    #actual-picture {
+        padding-right: 40em;
     }
 }
 @media (min-width: 102em) {
