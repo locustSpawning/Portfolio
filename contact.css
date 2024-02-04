@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     gap: 1em;
-    color: var(--clr-text);
+    color: var(--clr-text) !important;
 }
 
 .contact-link-image:hover {
