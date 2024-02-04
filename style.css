@@ -206,7 +206,7 @@ header a:visited,
 footer a:visited,
 .contact-page-link {
     color: var(--clr-text);
-    text-decoration: none;
+    text-decoration: none !important;
 }
 header a:hover,
 footer a:hover,
