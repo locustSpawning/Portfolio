@@ -203,7 +203,8 @@ footer a,
 #credits-list-section a,
 #open-as-pdf-div1 a,
 header a:visited,
-footer a:visited {
+footer a:visited,
+.contact-page-link {
     color: var(--clr-text);
     text-decoration: none;
 }
