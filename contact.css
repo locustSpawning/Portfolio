@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     gap: 1em;
+    text-decoration: none;
 }
 
 .contact-link-image:hover {
